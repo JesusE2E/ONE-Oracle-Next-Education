@@ -1,8 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 body{
     background-color: #000000;
     color: #F6F6F6;
+    box-sizing: border-box;
+    
+   
 }
+
+header{
+    padding: 2% 0 0% 15%;
+
+}
+.header__menu {
+display: flex;
+gap: 1.5rem;
+
+}
+.header__menu__enlaces:hover{
+    border: #22D4FD solid;
+    padding: 0.25rem;
+}
+
+
+.header__menu__enlaces {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    color:#22D4FD
+}
+ 
+
+
 
 strong{
     color: #22D4FD;
+}
+
+
+.subtituloFront{
+
+    color: red;
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+   margin: 10% 15%;
+   justify-content: space-between;
+   gap: 2.5rem;
+}
+
+.presentacion__contenido{
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+
+.presentacion__contenido__titulo{
+    font-size: 2rem;
+      font-family: "Krona One", sans-serif;
+}
+
+.presentacion__contenido__texto{
+    font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+}
+
+.presentacion__enlaces{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.presentacion__enlaces__link{
+   
+
+width: 23rem;
+ text-align: center;
+background-color:black;
+padding:1.5rem 0;
+border-radius: 0.5rem;
+border-color: #22D4FD;
+ font-family: "Montserrat", sans-serif;
+ font-size: 1.5rem;
+ text-decoration: none;
+ color: #F6F6F6;
+ border: 0.2rem solid #22D4FD;
+
+display: flex;
+justify-content: center;
+gap: 0.5rem;
+
+}
+
+.presentacion__enlace__subtitulo{
+    font-family: 'krona One',sans serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion__enlaces__link__img{
+align-items: center;
+
+}
+
+.presentacion__enlaces__link:hover{
+
+    background-color: #272727;
+}
+
+footer{
+    background-color: #22D4FD;
+    padding: 1.5rem;
+    color: black;
+    text-align: center;
+font-family:'Times New Roman', Times, serif;
+font-size:1.5rem;
+}
+
+
+.sobremi{
+display: flex;
+
+align-content:center;
+gap: 0.5rem;
+}
+.sobremi__div{
+display: flex;
+flex-direction: column;
+align-content:center;
+gap: 0.5rem;
+
+}
+
+.presentacion__imagen{
+    width: 50%;
+}
+
+@media(max-width: 1200px){
+
+    
+header{
+    padding: 10%;
+
+}
+
+.header__menu{
+    justify-content: center;
+}
+
+.presentacion{
+  
+    flex-direction: column-reverse;
+    padding: 5%;
+}
+.presentacion__contenido{
+    width: auto;
+}
+
+
 }
